@@ -1,7 +1,7 @@
 ## angular-dcl
 Simple setup using dcl.js with angular.
 
-## Installation
+## Demo
 ```shell
 bower install 
 ```

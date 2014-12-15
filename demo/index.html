@@ -14,8 +14,8 @@
 </head>
 <body ng-app="app">
   
-  <div ng-controller="MainCtrl as main">
-    
+  <div class="row" ng-controller="MainCtrl as main">
+    <h2>Toggle examples</h2>
     <!-- angular/foundation modal -->
     <a href="" ng-click="main.login.toggle()" class="button">login</a>
     <div class="reveal-modal-bg" ng-if="main.login.isOpen()" ng-click="main.login.close()"></div>    
@@ -41,10 +41,15 @@
 
   </div>
   
+  <!-- dclLib app -->
   <script src="../lib/app.js"></script>
-  <script src="../lib/Toggle.js"></script>
-  <script src="../lib/Dropdown.js"></script>
-  <script src="../lib/Modal.js"></script>
+
+  <!-- Toggle factories -->
+  <script src="../lib/toggle/Toggle.js"></script>
+  <script src="../lib/toggle/Dropdown.js"></script>
+  <script src="../lib/toggle/Modal.js"></script>
+
+  <!-- main -->
   <script src="main.js"></script>
 </body>
 </html>

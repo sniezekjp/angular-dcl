@@ -39,6 +39,12 @@
       </ul>
     </div>
 
+    <div class="switch" ng-mousedown="main.login.toggle()">
+      <p>Login switch</p>
+      <input id="exampleCheckboxSwitch" type="checkbox" ng-model="main.login._open">
+      <label for="exampleCheckboxSwitch"></label>
+    </div>    
+
   </div>
   
   <!-- dclLib app -->
@@ -48,6 +54,10 @@
   <script src="../lib/toggle/Toggle.js"></script>
   <script src="../lib/toggle/Dropdown.js"></script>
   <script src="../lib/toggle/Modal.js"></script>
+
+  <!-- Model -->
+  <script src="../lib/model/Model.js"></script>
+  <script src="../lib/model/Query.js"></script>
 
   <!-- main -->
   <script src="main.js"></script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular with DCL</title>
+  <script src="../bower_components/dcl/mini.js"></script>
+  <script src="../bower_components/dcl/dcl.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-animate/angular-animate.js"></script>
+
+  <link rel="stylesheet" href="../bower_components/foundation/css/normalize.css">
+  <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="app">
+  
+  <div ng-controller="MainCtrl as main">
+    
+    <!-- angular/foundation modal -->
+    <a href="" ng-click="main.login.toggle()" class="button">login</a>
+    <div class="reveal-modal-bg" ng-if="main.login.isOpen()" ng-click="main.login.close()"></div>    
+    <div class="reveal-modal small" ng-if="main.login.isOpen()">
+      <h2>{{main.login.title}}</h2>
+      <form ng-submit="main.login.close()">
+        <p><input type="text" placeholder="username"></p>
+        <p><input type="password" placeholder="password"></p>
+        <p><input class="button small" type="submit" value="Login"></p>
+      </form>
+      <a class="close-reveal-modal" ng-click="main.login.close()">&#215;</a>
+    </div>
+    
+    <!-- angular/foundation dropdown -->
+    <div class="dropdown">
+      <button class="button dropdown" ng-click="main.menu.toggle()">Dropdown Button</button>
+      <ul class="f-dropdown" ng-if="main.menu.isOpen()">
+        <li ng-repeat="item in main.menu.options">
+          <a href="">{{item.name}}</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  
+  
+  <script src="../lib/Toggle.js"></script>
+  <script src="../lib/Dropdown.js"></script>
+  <script src="../lib/Modal.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

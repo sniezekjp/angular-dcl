@@ -1,0 +1,81 @@
+.reveal-modal {
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  display: block;
+  visibility: visible;
+  top: 6.25rem;   
+}
+.reveal-modal.ng-enter {
+  opacity: 0;
+  top: -50%;
+}
+.reveal-modal.ng-enter-active {
+  opacity: 1;
+  top: 6.25rem;     
+}  
+.reveal-modal.ng-leave {
+  top: 6.25rem;
+}  
+.reveal-modal.ng-leave-active {
+  top: -50%;
+}
+.reveal-modal-bg {
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  display:block;
+}
+.reveal-modal-bg.ng-enter {
+  opacity: 0;
+}
+.reveal-modal-bg.ng-enter-active {
+  opacity: 1;
+}    
+.reveal-modal-bg.ng-leave {
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;      
+  opacity: 1;
+}
+.reveal-modal-bg.ng-leave-active {
+  opacity: 0;
+}  
+.dropdown {
+  display:inline-block;
+  position:relative;
+}
+.dropdown .button {
+  margin-bottom: 0;
+}
+.dropdown ul{
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;   
+  left: auto;
+  right: 0;
+}
+
+.dropdown ul.ng-enter {
+  opacity: 0;
+  right: -10px;
+}
+
+.dropdown ul.ng-enter-active {
+  opacity: 1;
+  right: 0px;
+}
+
+.dropdown ul.ng-leave {
+  opacity: 1;
+  right: 0px;
+}
+
+.dropdown ul.ng-leave-active {
+  opacity: 0;
+  right: -10px;
+}
+
+
+
+
+
+
+
+

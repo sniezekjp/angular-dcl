@@ -1,7 +1,7 @@
-var app = angular.module('app', ['ngAnimate']);
+var app = angular.module('app', ['ngAnimate', 'dclLib']);
 
 
-app.factory('ModalFactory', function() {
+app.factory('ModalFactory', function(Modal) {
   return {
     login: function() {
       return new Modal({
@@ -12,7 +12,7 @@ app.factory('ModalFactory', function() {
   }
 });
 
-app.factory("MenuFactory", function() {
+app.factory("MenuFactory", function(Dropdown) {
   return {
     account: function() {
       return new Dropdown({

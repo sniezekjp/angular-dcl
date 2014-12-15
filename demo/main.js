@@ -26,7 +26,7 @@ app.factory("MenuFactory", function(Dropdown) {
   }
 });
 
-app.controller('MainCtrl', function(ModalFactory, MenuFactory) {
+app.controller('MainCtrl', function(ModalFactory, MenuFactory, $q, $timeout, MockModel) {
   this.login = ModalFactory.login();
   this.menu  = MenuFactory.account();
 });

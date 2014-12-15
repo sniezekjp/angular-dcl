@@ -72,6 +72,12 @@
   right: -10px;
 }
 
+.meter {
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  max-width: 100%;
+}
+
 
 
 

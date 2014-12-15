@@ -15,7 +15,7 @@
 <body ng-app="app">
   
   <div class="row" ng-controller="MainCtrl as main">
-    <h2>Toggle examples</h2>
+    <h3>Toggle examples using dcl classes</h3>
     <!-- angular/foundation modal -->
     <a href="" ng-click="main.login.toggle()" class="button">login</a>
     <div class="reveal-modal-bg" ng-if="main.login.isOpen()" ng-click="main.login.close()"></div>    
@@ -34,7 +34,7 @@
       <button class="button dropdown" ng-click="main.menu.toggle()">Dropdown Button</button>
       <ul class="f-dropdown" ng-if="main.menu.isOpen()">
         <li ng-repeat="item in main.menu.options">
-          <a href="">{{item.name}}</a>
+          <a href="" ng-click="main.menu.close()">{{item.name}}</a>
         </li>
       </ul>
     </div>
@@ -43,7 +43,7 @@
       <p>Login switch</p>
       <input id="exampleCheckboxSwitch" type="checkbox" ng-model="main.login._open">
       <label for="exampleCheckboxSwitch"></label>
-    </div>    
+    </div>  
 
   </div>
   
